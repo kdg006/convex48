@@ -28,6 +28,7 @@ class R2Point:
     def dist(self, other):
         return sqrt((other.x - self.x)**2 + (other.y - self.y)**2)
 
+    # Проверка окресности ребра
     def okr1(self, other):
         if self.epsilon1 and other.epsilon1:
             return 1
